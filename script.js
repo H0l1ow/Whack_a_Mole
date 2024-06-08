@@ -6,6 +6,8 @@ let misses = 0;
 const holes = document.querySelectorAll('.hole');
 const scoreDisplay = document.getElementById('score');
 const startButton = document.getElementById('startButton');
+const hitSound = document.getElementById('hitSound');
+const missSound = document.getElementById('missSound');
 
 holes.forEach(hole => {
     hole.addEventListener('click', () => {
@@ -14,6 +16,9 @@ holes.forEach(hole => {
             scoreDisplay.textContent = score;
             hole.classList.remove('mole');
             activeHole = null;
+            hitSound.play();
+        } else {
+            missSound.play();
         }
     });
 });

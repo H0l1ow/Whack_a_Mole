@@ -1,16 +1,25 @@
-/* style.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #90ee90;
     margin: 0;
 }
 
 #game {
     text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #556b2f;
+    margin-bottom: 10px;
 }
 
 .grid {
@@ -24,18 +33,29 @@ body {
 .hole {
     width: 100px;
     height: 100px;
-    background-color: yellow;
+    background-color: #8b4513;
     border-radius: 50%;
     position: relative;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .hole.mole {
-    background-color: red;
+    background-color: #ff6347;
 }
 
 button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
+    background-color: #556b2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6b8e23;
 }
